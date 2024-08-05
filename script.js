@@ -21,12 +21,14 @@ function generateUser(){
         username.innerText="Hi, My name is";
         userdesc.innerText=randomname;
         iconregular[0].style.color="green"
-
     })
     .catch((error)=>{
         console.error("Error fetching user:",error);
     });
     }
+
+    //Hover section
+
     iconregular[0].addEventListener('mouseover',generatename)
     function generatename(){
         username.innerText="Hi, My name is";
