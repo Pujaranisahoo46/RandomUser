@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: "Open Sans", sans-serif;
     position: relative;
@@ -6,26 +11,30 @@ body{
    
 }
 /* Navigation section */
-.nav-sec{
+header .nav-sec{
     background-color: rgb(31, 27, 27);
-    height: 100px;
+    height: 70px;
     width: 100%;
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
+    /* align-content: center; */
 }
-nav{
+header .nav-sec nav{
     position: absolute;
     margin-left: 250px;
+    margin-top: 10px;
+    align-content: center;
 }
-ul li{
+header .nav-sec nav ul li{
     display: inline;
     justify-content:space-evenly;
     padding: 7px;
 }
-ul li a{
+header .nav-sec nav ul li a{
     text-decoration: none;
     color: white;  
 }
-li a{
+header .nav-sec nav ul li a{
     position: absolute;
     margin-top: 30px;
     
@@ -121,11 +130,17 @@ li a{
  .user-container{ 
     position: absolute;
     width: 49%;
-    height: 420px;
+    height: 390px;
     margin-top: 300px;
-    background-color: white;
+    background-color: rgb(248, 248, 248);
     border-radius: 5px;
     margin-left: 25%; }
+.twiter{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    margin-left: -30px;
+}
 .container p a{
     color: rgb(51, 113, 151);
 }
@@ -135,29 +150,107 @@ img{
     position: absolute;
     margin-top: 0%;    
 }
-/* random name */
-.container1{
-    position: absolute;
-    margin-left: 400px;
-    margin-top: 335px;
-    height: 380px;
-    width: 700px;
-    border-radius:8px ;
-    /* border: 2px solid black ; */
-    justify-content: center;
-    text-align: center;
-    background-color: red;
+.twitp{
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+    cursor: pointer;
 }
-.container1 #user-image{
-    position: absolute;
-    margin-top: 0%;
+hr{
+    margin-top: 110px;
+}
+.randomuser{
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
-    
+    padding: 4px;
+    border: 1px solid rgb(74, 74, 74);
+    position: absolute;
+    margin-left: 285px;
+    margin-top: 15px;
 }
-#generate-btn{
-    color: white;
-    background-color: green;
+/* Sponsered */
+.sponsored{
+    height: 230px;
+    width: 300px;
+    position: absolute;
+    border: 1px solid rgb(84, 83, 83);
+    /* background-color: #007bff; */
+    text-align: center;
+    width: 49%;
+    margin-left: 376px;
+    margin-top: 50%;
+    border-radius: 5px;
+    justify-content: space-evenly;
+    box-shadow: 0 0  3px rgb(59, 59, 59);
+}
+.sp{
+    font-size: 13px;
+    padding: 5px;
+}
+.sponsored h3{
+    font-weight: 100;
+    font-size: 25px;
+    margin-top: 8px;
+    padding: 10px;
+}
+.p1{
+    padding: 10px;
+}
+.p2{
+  margin-top: -10px;
+}
+.btn{
+    cursor: pointer;
+    padding: 15px 28px;
+    background-color: rgb(128, 219, 128);
     border: none;
-    height: 30px;
-    font-weight: 300;
+    border-radius: 3px;
+    color: white;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.user-con{
+    height: 200px;
+    width: 60%;
+    /* margin-top: -20%; */
+}
+#user-image{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-left: 39%;
+    margin-top: -10%;
+}
+.user-container{
+    margin-top: 20%;
+}
+.show-name{
+    margin-left: 38%;
+    margin-top: 13%;
+}
+.icon-container{
+    height: 88px;
+    width: 550px;
+    /* background-color: wheat; */
+    position: absolute;
+    top: 290px;
+    left: 120px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-container i{
+    color: rgba(128,128, 128, 0.503);
+    font-size: 30px;
+    cursor: pointer;
+    padding: 30px;
+
+}
+section .user-container #user-name{
+    font-size: 20px;
+    color: gray;
+}
+section .user-container #user-desc{
+    font-size: 30px;
+    color: black;
 }

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random user</title>
     <link rel="stylesheet" href="style.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 </head>
 <body>
    <header>
@@ -28,22 +31,40 @@
         <div class="container">
             <h1>RANDOM USER GENERATOR</h1>
             <p>A free ,<a href="#">Open source</a>API for generating random user data.Like Lorem Ipsum,but for people.</p>
-            <p>Follow us@randommani</p>
+            <p class="twitp"><img class="twiter" src="twitter.png"  alt="twiter">Follow us@randommani</p>
+        </div> 
+        <div id="user-container1" class="user-container">
+                <hr>
+                <img id="user-image" src="" alt="User Image">
+                <div class="show-name">
+                <h2 id="user-name"></h2>
+                <p id="user-desc"></p>
+                <!-- <p id="user-location"></p> -->
+            </div>
+            <div class="icon-container">
+                <i class="fa-regular fa-user"></i>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-regular fa-calendar-days"></i>
+                <i class="fa-solid fa-map-location-dot"></i>
+                <i class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-lock"></i>
+            </div>
         </div>
-        <!-- <div class="user-container">
-            <img id="" src="" alt="">
-            <hr>
-        </div> -->
-        <div class="container1">
-            <h1>Random User Generator</h1>
-            <button id="generate-btn">Generate Random User</button>
-         <div id="user-container" class="user-container">
-            <img id="user-image" src="" alt="User Image" height="150px" width="">
-            <h2 id="user-name"></h2>
-            <p id="user-email"></p>
-            <p id="user-location"></p>
-        </div>
-        </div>
+ 
    </section>
+   <div class="sponsored">
+    <p class="sp">SPONSORED</p>
+    <h3>RandomAPI</h3>
+    <p class="p1">Want to create own <b>customized</b> data generator for your application?</p>
+    <p class="p2">Check out our other service RandomAPI!</p>
+    <button class="btn">Learn More</button>
+    <br>
+   
+
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
+
+
+
